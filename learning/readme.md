@@ -6,3 +6,4 @@
     4:  In Config or PGM mode a local OTA is possible
     5:  Normal operation is 1 hour deep sleep cycles to conserve battery power
     6:  NTP for time of day events
+    7:  An ESP-12F was used in testing
