@@ -1,0 +1,202 @@
+<html>
+<head>
+  <title>SCADA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<table style="margin-left: auto; margin-right: auto;" summary="MillFlat El-Rancho SCADA" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td><span style="font-family: arial, helvetica, sans-serif; font-size: small; color: #ff0000;"><strong><span style="font-size: large;"><strong><span style="font-family: arial, helvetica, sans-serif;">Mill Flat El-Rancho SCADA Summary</span></strong></span></strong></span></td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td><span style="font-family: arial, helvetica, sans-serif; font-size: small; color: #ff0000;" id="sysalarm"><strong>%SYSTEMALARMS%</strong></span></td>
+</tr>
+<tr>
+<td><span style="font-family: arial, helvetica, sans-serif; font-size: small; color: #3366ff;" id="temps"><strong>%TEMPS%</strong></span></td>
+</tr>
+<tr>
+<td><span style="font-family: arial, helvetica, sans-serif; font-size: small; color: #3366ff;" id="hums"><strong>%HUMS%</strong></span></td>
+</tr>
+<tr>
+<td><span style="font-family: arial, helvetica, sans-serif; font-size: small; color: #3366ff;" id="press"><strong>%PRES%</strong></span></td>
+</tr>
+<tr>
+<td><span style="font-family: arial, helvetica, sans-serif; font-size: small; color: #3366ff;" id="levels"><strong>%LEVELS%</strong></span></td>
+</tr>
+<tr>
+<td><span style="font-family: arial, helvetica, sans-serif; font-size: small; color: #3366ff;" id="usage"><strong>%USAGE%</strong></span></td>
+</tr>
+<tr>
+<td><span style="font-family: arial, helvetica, sans-serif; font-size: small; color: #ff0000;" id="errors"><strong>%ERRORS%</strong></span></td>
+</tr>
+<tr>
+<td><span style="font-family: arial, helvetica, sans-serif; font-size: small; color: #3366ff;" id="light"><strong>%LIGHT%</strong></span></td>
+</tr>
+<tr>
+<td><span style="font-family: arial, helvetica, sans-serif; font-size: small; color: #3366ff;" id="doors"><strong>%DOORS%</strong></span></td>
+</tr>
+<tr>
+<td><span style="font-family: arial, helvetica, sans-serif; font-size: small; color: #3366ff;" id="mouse"><strong>%MOUSE%</strong></span></td>
+</tr>
+<tr>
+<td><span style="font-family: arial, helvetica, sans-serif; font-size: small; color: #ff0000;" id="da"><strong>%DOORALARM%</strong></span></td>
+</tr>
+<tr>
+<td><span style="font-family: arial, helvetica, sans-serif; font-size: small; color: #ff0000;" id="sa"><strong>%SEPTICALARMS%</strong></span></td>
+</tr>
+<tr>
+<td><span style="font-family: arial, helvetica, sans-serif; font-size: small; color: #3366ff;" id="valve"><strong>%VALVEPOS%</strong></span></td>
+</tr>
+</tbody>
+</table>
+</body>
+<script>
+  setInterval(function ( ) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("sysalarm").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "/sysalarms", true);
+    xhttp.send();
+  }, 10000 ) ;
+
+  setInterval(function ( ) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("temps").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "/systemps", true);
+    xhttp.send();
+  }, 10000 ) ;
+
+  setInterval(function ( ) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("hums").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "/syshums", true);
+    xhttp.send();
+  }, 10000 ) ;
+
+  setInterval(function ( ) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("press").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "/syspres", true);
+    xhttp.send();
+  }, 10000 ) ;
+  
+    setInterval(function ( ) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("levels").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "/tank1", true);
+    xhttp.send();
+  }, 10000 ) ;
+  
+    setInterval(function ( ) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("usage").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "/tankuse", true);
+    xhttp.send();
+  }, 10000 ) ;  
+  
+    setInterval(function ( ) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("errors").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "/errors", true);
+    xhttp.send();
+  }, 10000 ) ;  
+
+    setInterval(function ( ) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("light").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "/light", true);
+    xhttp.send();
+  }, 10000 ) ; 
+
+    setInterval(function ( ) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("doors").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "/doors", true);
+    xhttp.send();
+  }, 10000 ) ;  
+
+    setInterval(function ( ) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("mouse").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "/mouse", true);
+    xhttp.send();
+  }, 10000 ) ;  
+
+    setInterval(function ( ) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("da").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "/galarm", true);
+    xhttp.send();
+  }, 10000 ) ;
+
+    setInterval(function ( ) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("sa").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "/salarms", true);
+    xhttp.send();
+  }, 10000 ) ;  
+
+    setInterval(function ( ) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("valve").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "/vpos", true);
+    xhttp.send();
+  }, 10000 ) ; 
+  
+</script>
+</html>
