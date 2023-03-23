@@ -7,9 +7,11 @@
     5:  Normal operation is 1 hour deep sleep cycles to conserve battery power
     6:  NTP for time of day events
     7:  An ESP-12F was used in testing
+###
 
 ## Serial_transfer_testing
-To learn how to create what becam the "Bridge" link between Blynk and the MESH root Node (Assumes there is a MESH network in place and this is on the root node)
+To learn how to create what becam the "Bridge" link between Blynk and the MESH root Node (Assumes there is a MESH network in place and this is on the root node).
+###
 
 ## encoder_btns_test
 ### A simple test sketch to understand the Rotary Encoder. 
@@ -18,3 +20,4 @@ To learn how to create what becam the "Bridge" link between Blynk and the MESH r
     2.  Every click toggles the on-board LED
     3.  Encoder direction and count displayed (0 - 10 - 0)
     4.  Left, Center and Right button click's displayed
+###
