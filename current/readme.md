@@ -30,18 +30,18 @@
   2.  Tank Light Button
   3.  Septic Purge Servo Switching
   4.  OLED display of key data with screen off time-out
-  5.  Rotary Encoder for Wake / Manual / Auto screen rotation.
-  6.  SD Card for MESH OTA Updates
-  7.  UART Bi-directional Bridge to Blynk Node.
+  5.  Buzzer for Audible Alarm
+  6.  Rotary Encoder for Wake / Manual / Auto screen rotation.
+  7.  SD Card for MESH OTA Updates
+  8.  UART Bi-directional Bridge to Blynk Node.
 
 ### Blynk Node: Kitchen
   1.  UART Bi-directional Bridge to MESH
   2.  NTP Master for MESH (push)
   3.  Servo for Water Level Meter
   4.  Addressable Leds for Sysyem States
-  5.  Buzzer for Audible Alarm
-  6.  ElegantOTA for Blynk Node
-  7.  Webpage for all current variable states and values
+  5.  ElegantOTA for Blynk Node
+  6.  Webpage for all current variable states and values
       ### Blynk App
       1.  Garage Door Pulse Button
       2.  States of All Doors in Garage
@@ -52,5 +52,5 @@
       7.  Current State of yard Light
       8.  Septic Tank Purge valve button
       9.  Current State of Septic Purge Valve
-      10.  System Alarms (Currently an int, will be changing to Strings)
+      10.  System Alarms as int with PUSH (automations) notifications
   
