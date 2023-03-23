@@ -4,7 +4,7 @@
 
 ### Node 4: Septic Tank:
   1.  Level Alarm 
-  2.  Purge Servo Postion
+  2.  Purge Servo Control
   3.  Level Alarm Bulb Failure
   4.  Pump Failure
   
