@@ -10,7 +10,7 @@
 ##
 
 ### ESPflash_array_config
-####This sketch was for learning how to save variables (index value and a 30 value array) to SPIFFS.
+#### This sketch was for learning how to save variables (index value and a 30 value array) to SPIFFS.
     1.  It uses random numbers for each array update. 
     2.  There are two switch's that control setup and run modes
     3.  The array configures on first pass and populates the array with the first value. On the next pass it steps along one index value and adds a new value. It repeats this till it reaches the last array index position then wraps back to the first index and repeats thus creating an Averaging Array
