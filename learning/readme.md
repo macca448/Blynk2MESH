@@ -15,7 +15,7 @@ To learn how to create what becam the "Bridge" link between Blynk and the MESH r
 
 ### encoder_btns_test
 ### A simple test sketch to understand the Rotary Encoder. 
-Using an SSD1306 OLED with Adafruit SSD1306 library
+### Using an SSD1306 OLED with Adafruit SSD1306 library
     1.  Encoder button toggles screen On / Off
     2.  Every click toggles the on-board LED
     3.  Encoder direction (CW - CCW) and count displayed (0 - 10 - 0)
