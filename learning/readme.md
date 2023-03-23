@@ -13,8 +13,11 @@
 #### This sketch was for learning how to save variables (index value and a 30 value array) to SPIFFS.
     1.  It uses random numbers for each array update. 
     2.  There are two switch's that control setup and run modes
-    3.  The array configures on first pass and populates the array with the first value. On the next pass it steps along one index value and adds a new value. It repeats this till it reaches the last array index position then wraps back to the first index and repeats thus creating an Averaging Array
-    4.  In run mode it uses a 15 second sleep cycle for the for the value update cycle.
+    3.  The array configures on first pass and populates the array with the first value. 
+    4.   On the next pass it steps along one index value and adds a new value. 
+    5.   It repeats this till it reaches the last array index position 
+    6.   The index then wraps back to the first index and repeats thus creating an Averaging Array
+    7.  In run mode it uses a 15 second sleep cycle for the for the value update cycle.
 ##
 
 ### Serial_transfer_testing
