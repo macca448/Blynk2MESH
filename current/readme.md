@@ -20,7 +20,7 @@
   9.  Time of day SPIFFS save statistical variables function
   
 ### Node 2: Garage
-  1.  3 x Door States
+  1.  States for Internal, Ranch Slider and Garage Doors
   2.  Door has been left Open Alarm (Seasonal variations)
   3.  Mouse Trap State
   4.  Open / Close main garage Door
