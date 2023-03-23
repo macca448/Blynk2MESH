@@ -9,7 +9,7 @@
     7:  An ESP-12F was used in testing
 
 ## Serial_transfer_testing
-### To learn how to create what becam the "Bridge" link between Blynk and the MESH root Node (Assumes there is a MESH network in place and this is on the root node)
+To learn how to create what becam the "Bridge" link between Blynk and the MESH root Node (Assumes there is a MESH network in place and this is on the root node)
 
 ## encoder_btns_test
 ### A simple test sketch to understand the Rotary Encoder. 
