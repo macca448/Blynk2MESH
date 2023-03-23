@@ -15,6 +15,7 @@
     2.  There are two switch's that control setup and run modes
     3.  The array configures on first pass and populates the array with the first value. On the next pass it steps along one index value and adds a new value. It repeats this till it reaches the last array index position then wraps back to the first index and repeats thus creating an Averaging Array
     4.  In run mode it uses a 15 second sleep cycle for the for the value update cycle.
+##
 
 ### Serial_transfer_testing
 To learn how to create what becam the "Bridge" link between Blynk and the MESH root Node (Assumes there is a MESH network in place and this is on the root node).
