@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+    <title>SCADA</title>
+    <script type="text/javascript"  src="gauge.min.js"></script>
+    <!--link rel="stylesheet" type="text/css" href="gauge.css"-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+<div style="text-align: center;"><span style="font-family: arial, helvetica, sans-serif; font-size: xx-large; color: #ff0000;"><strong><strong><span style="font-family: arial, helvetica, sans-serif;">Mill Flat El-Rancho SCADA</span></strong></strong></span></div>
+<div style="text-align: center;"><span id="mytime" style="font-family: arial, helvetica, sans-serif; font-size: large; color: #3366ff;"><strong><strong><span style="font-family: arial, helvetica, sans-serif;">%BLYNKTIME%</span></strong></strong></span></div>
+<div style="text-align: center;"></div>
+<p><div align="center"><canvas id="gauge-ps"></canvas></div>
+<div id="level" style="display:none;"></div></p>
+<p>
+<dir style="text-align: center"><span style="font-family: arial, helvetica, sans-serif; font-size: medium; color: #3366ff;"><strong>Place Holder for Usage</strong></span></dir>
+</p>
+
+
+<table style="margin-left: auto; margin-right: auto;" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td colspan="2" align="center" valign="middle"><span style="text-decoration: underline; font-size: large;"><span style="font-family: arial, helvetica, sans-serif; color: #ff0000;"><strong>ALARMS</strong></span></span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="font-family: arial, helvetica, sans-serif; font-size: medium; color: #ff0000;"><strong>System:</strong></span></td>
+<td><span id="sysalarm" style="font-family: arial, helvetica, sans-serif; font-size: medium; color: #ff0000;"><strong>%SYSTEMALARMS%</strong></span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="font-family: arial, helvetica, sans-serif; font-size: medium; color: #ff0000;"><strong><span style="font-family: arial, helvetica, sans-serif; color: #ff0000;"><strong>Read Errors:</strong></span></strong></span></td>
+<td><span style="font-family: arial, helvetica, sans-serif; font-size: medium; color: #ff0000;"><strong><span id="errors" style="font-family: arial, helvetica, sans-serif; color: #ff0000;"><strong>%ERRORS%</strong></span></strong></span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="font-family: arial, helvetica, sans-serif; font-size: medium; color: #ff0000;"><strong><span style="font-family: arial, helvetica, sans-serif; color: #ff0000;"><strong><span style="font-family: arial, helvetica, sans-serif; color: #ff0000;"><strong>Door Alarm:</strong></span></strong></span></strong></span></td>
+<td><span style="font-family: arial, helvetica, sans-serif; font-size: medium; color: #ff0000;"><strong><span style="font-family: arial, helvetica, sans-serif; color: #ff0000;"><strong><span id="da" style="font-family: arial, helvetica, sans-serif; color: #ff0000;"><strong>%DOORALARM%</strong></span></strong></span></strong></span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="font-family: arial, helvetica, sans-serif; font-size: medium; color: #ff0000;"><strong><span style="font-family: arial, helvetica, sans-serif; color: #ff0000;"><strong><span style="font-family: arial, helvetica, sans-serif; color: #ff0000;"><strong><span style="font-family: arial, helvetica, sans-serif; color: #ff0000;"><strong>Septic Alarms:</strong></span></strong></span></strong></span></strong></span></td>
+<td><span style="font-family: arial, helvetica, sans-serif; font-size: medium; color: #ff0000;"><strong><span style="font-family: arial, helvetica, sans-serif; color: #ff0000;"><strong><span style="font-family: arial, helvetica, sans-serif; color: #ff0000;"><strong><span id="sa" style="font-family: arial, helvetica, sans-serif; color: #ff0000;"><strong>%SEPTICALARMS%</strong></span></strong></span></strong></span></strong></span></td>
+</tr>
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" align="center" valign="middle"><span style="text-decoration: underline; font-size: large;"><span style="font-family: arial, helvetica, sans-serif; color: #ff9900;"><strong>STATES</strong></span></span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="font-family: arial, helvetica, sans-serif; font-size: medium; color: #ff9900;"><strong>Valve POS:</strong></span></td>
+<td><span id="valve" style="font-family: arial, helvetica, sans-serif; font-size: medium; color: #ff9900;"><strong>%VALVEPOS%</strong></span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="font-family: arial, helvetica, sans-serif; font-size: medium; color: #ff9900;"><strong>Light:</strong></span></td>
+<td><span id="light" style="font-family: arial, helvetica, sans-serif; font-size: medium; color: #ff9900;"><strong>%LIGHT%</strong></span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="font-size: medium;"><span style="font-family: arial, helvetica, sans-serif; color: #ff9900;"><strong>Doors:</strong></span></span></td>
+<td><span style="font-size: medium;"><span id="doors" style="font-family: arial, helvetica, sans-serif; color: #ff9900;"><strong> %DOORS%</strong></span></span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="font-size: medium;"><span style="font-family: arial, helvetica, sans-serif; color: #ff9900;"><strong>TRAP:</strong></span></span></td>
+<td><span style="font-size: medium;"><span id="mouse" style="font-family: arial, helvetica, sans-serif; color: #ff9900;"><strong> %MOUSE%</strong></span></span></td>
+</tr>
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" align="center" valign="middle"><span style="font-family: arial, helvetica, sans-serif; font-size: large; color: #ff9900;"><strong><span style="text-decoration: underline; color: #3366ff;"><strong><span style="font-family: arial, helvetica, sans-serif;">Weather</span></strong></span></strong></span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="font-family: arial, helvetica, sans-serif; font-size: medium; color: #3366ff;"><strong>Temperature:</strong></span></td>
+<td><span id="temps" style="font-family: arial, helvetica, sans-serif; font-size: medium; color: #3366ff;"><strong>%TEMPS%</strong></span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="font-family: arial, helvetica, sans-serif; font-size: medium; color: #3366ff;"><strong>Humidity:</strong></span></td>
+<td><span id="hums" style="font-family: arial, helvetica, sans-serif; font-size: medium; color: #3366ff;"><strong>%HUMS%</strong></span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="font-family: arial, helvetica, sans-serif; font-size: medium; color: #3366ff;"><strong>Pressure:</strong></span></td>
+<td><span id="press" style="font-family: arial, helvetica, sans-serif; font-size: medium; color: #3366ff;"><strong>%PRES%</strong></span></td>
+</tr>
+</tbody>
+</table>
+<script type="text/javascript"  src="page_ajax.js"></script>
+<script type="text/javascript"  src="gauge_ajax.js"></script>
+</body>
+</html>
