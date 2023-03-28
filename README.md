@@ -23,7 +23,7 @@ The [current folder](https://github.com/macca448/Blynk2MESH/tree/main/current) c
   
 ### Node 3: Tank 1 (House Water Supply)
   1.  Water Level as percentage full
-  2.  Liters of Water available
+  2.  Litre's of Water available
   3.  Water used in the last 24 hours
   4.  30 Day Average daily use
   5.  Day's of Water on hand based on Average Daily Use
@@ -52,27 +52,24 @@ The [current folder](https://github.com/macca448/Blynk2MESH/tree/main/current) c
   1.  UART Bi-directional Bridge to MESH
   2.  NTP Master for MESH (push)
   3.  Servo for Water Level Meter
-  4.  Addressable Leds for Sysyem States
+  4.  Addressable LED's for System States
   5.  ElegantOTA for Blynk Node
-  6.  Webpage for all current variable states and values
+  6.  Web-page for all current variable states and values
       ### Blynk App
       1.  Garage Door Pulse Button
       2.  States of All Doors in Garage
       3.  Mouse Trap State
-      4.  Water in Liters meter
+      4.  Water in Litre's meter
       5.  Average Daily Use Value
       6.  Yard Light button
       7.  Current State of yard Light
       8.  Septic Tank Purge valve button
       9.  Current State of Septic Purge Valve
-      10.  System Alarms as int with PUSH (automations) notifications
-      
-## To-do Items
+      10.  System Alarms as integer with PUSH (automations) notifications        
+
+## To-do Items   
   1.  Improve OLED Screen Layouts
   2.  Add Barometer Mechanical Gauge
-  3.  Merge Weather Forcasting from this [Weather Predictor Project](https://github.com/macca448/ESP_Weather_Predictor/) and use LED's to show forecast
-
-
-
+  3.  Merge Weather Forecasting from this [Weather Predictor Project](https://github.com/macca448/ESP_Weather_Predictor/) and use LED's to show forecast
 
 
