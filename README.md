@@ -71,5 +71,6 @@ The [current folder](https://github.com/macca448/Blynk2MESH/tree/main/current) c
   1.  Improve OLED Screen Layouts
   2.  Add Barometer Mechanical Gauge
   3.  Merge Weather Forecasting from this [Weather Predictor Project](https://github.com/macca448/ESP_Weather_Predictor/) and use LED's to show forecast
+  4.  Functional Block Schematics for all nodes
 
 
