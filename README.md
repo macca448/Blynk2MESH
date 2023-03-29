@@ -29,14 +29,23 @@ The [current folder](https://github.com/macca448/Blynk2MESH/tree/main/current) c
   5.  Day's of Water on hand based on Average Daily Use
   6.  Yard Lighting
   7.  Tank sensors read error feedback
+      
       If the Tank Temp Sensor fails ttReadOK returns false (single event)
+      
       For a tank temp false reading a defined temp is used
+      
       If the Ultrasonic sensor has a read failure usReadOK returns False (single event)
+      
       A max of 10 false readings before it times out.
+      
   8.  Cumulative Time-out count. 
+      
       To improve accuracy each value in the smoothing array is tested
+      
       If any sigle reading is outside the tollerance defined the process repeats
+      
       There is a 10 count timeout that will increment the time-out count
+      
   9.  Time of day SPIFFS save statistical variables function
   
 ### Node 2: Garage
