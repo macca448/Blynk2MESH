@@ -8,7 +8,7 @@ I then realised that there were other assets that needed monitoring and/or contr
 
 ### Basic Flow Chart of System
 
-![Blynk2MESH flowchart](https://github.com/macca448/Blynk2MESH/blob/main/assets/mesh_flowchart_sm.png)
+![Blynk2MESH flowchart](https://github.com/macca448/Blynk2MESH/blob/main/assets/mesh_flowchart_sm.jpg)
 
 ## General System Features
 The [current folder](https://github.com/macca448/Blynk2MESH/tree/main/current) contains working sketch's that have or will have the following functionality
