@@ -21,6 +21,9 @@ The [current folder](https://github.com/macca448/Blynk2MESH/tree/main/current) c
   3.  Level Alarm Bulb Failure
   4.  Pump Failure
   
+  ![Septic PIN Map](https://github.com/macca448/Blynk2MESH/blob/main/assets/septic_pin_map.jpg)
+
+  
 ### Node 3: Tank 1 (House Water Supply)
   1.  Water Level as percentage full
   2.  Litre's of Water available
@@ -47,12 +50,18 @@ The [current folder](https://github.com/macca448/Blynk2MESH/tree/main/current) c
       There is a 10 count timeout that will increment the time-out count
       
   9.  Time of day SPIFFS save statistical variables function
+
+  ![Tank1 PIN Map](https://github.com/macca448/Blynk2MESH/blob/main/assets/tank1_pin_map.jpg)
   
 ### Node 2: Garage
   1.  States for Internal, Ranch Slider and Garage Doors
   2.  Door has been left Open Alarm (Seasonal variations)
   3.  Mouse Trap State
   4.  Open / Close main garage Door
+
+  ![Garage PIN Map](https://github.com/macca448/Blynk2MESH/blob/main/assets/garage_pin_map.jpg)
+  
+  ![Mouse_Trap Circuit](https://github.com/macca448/Blynk2MESH/blob/main/assets/mouse_trap_circuit.jpg)
 
 ### Node 1: Kitchen
   1.  Garage Door Button
@@ -64,6 +73,8 @@ The [current folder](https://github.com/macca448/Blynk2MESH/tree/main/current) c
   7.  SD Card for MESH OTA Updates
   8.  UART Bi-directional Bridge to Blynk Node.
 
+![Kitchen PIN Map](https://github.com/macca448/Blynk2MESH/blob/main/assets/kitchen_pin_map.jpg)
+
 ### Blynk Node: Kitchen
   1.  UART Bi-directional Bridge to MESH
   2.  NTP Master for MESH (push)
@@ -71,6 +82,7 @@ The [current folder](https://github.com/macca448/Blynk2MESH/tree/main/current) c
   4.  Addressable LED's for System States
   5.  ElegantOTA for Blynk Node
   6.  Web-page for all current variable states and values
+  
       ### Blynk App
       1.  Garage Door Pulse Button
       2.  States of All Doors in Garage
@@ -81,7 +93,9 @@ The [current folder](https://github.com/macca448/Blynk2MESH/tree/main/current) c
       7.  Current State of yard Light
       8.  Septic Tank Purge valve button
       9.  Current State of Septic Purge Valve
-      10.  System Alarms as integer with PUSH (automations) notifications        
+      10.  System Alarms as integer with PUSH (automations) notifications
+      
+![Blynk PIN Map](https://github.com/macca448/Blynk2MESH/blob/main/assets/blynk_pin_map.jpg)
 
 ## To-do Items   
   1.  Improve OLED Screen Layouts
