@@ -24,6 +24,11 @@
   2.  Door has been left Open Alarm (Seasonal variations)
   3.  Mouse Trap State
   4.  Open / Close main garage Door
+  ### Mouse Trap
+    1.  A simple sketch that uses two IR beams to detect a mose entering the trap
+    2.  Currently running on a NANO but will be fine tuned to run on an ATTiny85
+    3.  LED State indication (Solid = Armed, Blinking = Mouse in Trap)
+    4.  HIGH / LOW state passed to Garage Node
 
 ### Node 1: Kitchen
   1.  Garage Door Button
