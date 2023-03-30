@@ -47,7 +47,7 @@ The [current folder](https://github.com/macca448/Blynk2MESH/tree/main/current) c
       
       To improve accuracy each value in the smoothing array is tested
       
-      If any sigle reading is outside the tollerance defined the process repeats
+      If any single reading is outside the tollerance defined the process repeats
       
       There is a 10 count timeout that will increment the time-out count
       
