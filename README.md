@@ -99,6 +99,8 @@ The [current folder](https://github.com/macca448/Blynk2MESH/tree/main/current) c
       
 ![Blynk PIN Map](https://github.com/macca448/Blynk2MESH/blob/main/assets/blynk_pin_map.jpg)
 
+![Blynk PIN Map](https://github.com/macca448/Blynk2MESH/blob/main/assets/dashboard.jpg)
+
 ## To-do Items   
   1.  Improve OLED Screen Layouts
   2.  Add Barometer Mechanical Gauge
