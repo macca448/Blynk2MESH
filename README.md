@@ -4,6 +4,8 @@
 
 This project started with developing a simple water tank monitoring system. In the [learning folder](https://github.com/macca448/Blynk2MESH/tree/main/learning) there is a standalone version of the water tank node that uses SPIFFS to save key data so statistical information can be displayed like "Water used in the last 24 hours", "Average Daily Use" and so on. Other items in the [learning folder](https://github.com/macca448/Blynk2MESH/tree/main/learning) are sketch's that are for calibrating or were used in learning how to do different tasks.
 
+Here is a link to a short video demo of the system in action [here](https://youtu.be/xZrsctHoBcQ)
+
 I then realised that there were other assets that needed monitoring and/or control so the project was expanded with "painlessMesh" to create interactive "Monitoring and Control" via Blynk or the ROOT MESH node which will be located in the kitchen.
 
 ### Basic Flow Chart of System
