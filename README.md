@@ -1,6 +1,6 @@
 # Blynk2MESH
 
-## Lifestyle Property Asset Monitoring & Control System
+## Lifestyle Property Asset Monitoring and Control System
 
 This project started with developing a simple water tank monitoring system. In the [learning folder](https://github.com/macca448/Blynk2MESH/tree/main/learning) there is a standalone version of the water tank node that uses SPIFFS to save key data so statistical information can be displayed like "Water used in the last 24 hours", "Average Daily Use" and so on. Other items in the [learning folder](https://github.com/macca448/Blynk2MESH/tree/main/learning) are sketch's that are for calibrating or were used in learning how to do different tasks.
 
