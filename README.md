@@ -75,7 +75,7 @@ The [current folder](https://github.com/macca448/Blynk2MESH/tree/main/current) c
   7.  SD Card for MESH OTA Updates
   8.  UART Bi-directional Bridge to Blynk Node.
 
-![Kitchen PIN Map](https://github.com/macca448/Blynk2MESH/blob/main/assets/kitchen_pin_map.jpg)
+![Kitchen PIN Map](https://github.com/macca448/Blynk2MESH/blob/main/assets/node1_kitchen_schematic.jpg)
 
 ### Blynk Node: Kitchen
   1.  UART Bi-directional Bridge to MESH
@@ -97,13 +97,16 @@ The [current folder](https://github.com/macca448/Blynk2MESH/tree/main/current) c
       9.  Current State of Septic Purge Valve
       10.  System Alarms as integer with PUSH (automations) notifications
       
-![Blynk PIN Map](https://github.com/macca448/Blynk2MESH/blob/main/assets/blynk_pin_map.jpg)
+![Blynk PIN Map](https://github.com/macca448/Blynk2MESH/blob/main/assets/blynk_schematic.jpg)
+
 
 ## Blynk App
 ![Blynk App](https://github.com/macca448/Blynk2MESH/blob/main/assets/Screenshot_20230330_191601_Blynk%20IoT.jpg)
 
+
 ## Blynk Dashboard
 ![Blynk Dashboard](https://github.com/macca448/Blynk2MESH/blob/main/assets/dashboard.jpg)
+
 
 ## Async Server of All States 
 ![All States Async Server on Blynk](https://github.com/macca448/Blynk2MESH/blob/main/assets/MESH_WEBSITE.jpg)
