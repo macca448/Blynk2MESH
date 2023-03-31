@@ -63,7 +63,7 @@ The [current folder](https://github.com/macca448/Blynk2MESH/tree/main/current) c
 
   ![Garage PIN Map](https://github.com/macca448/Blynk2MESH/blob/main/assets/garage_pin_map.jpg)
   
-  ![Mouse_Trap Circuit](https://github.com/macca448/Blynk2MESH/blob/main/assets/mouse_trap_schematic_sm.jpg)
+  ![Mouse_Trap Circuit](https://github.com/macca448/Blynk2MESH/blob/main/assets/mouse_trap_schematic.jpg)
 
 ### Node 1: Kitchen
   1.  Garage Door Button
