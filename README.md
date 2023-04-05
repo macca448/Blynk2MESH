@@ -61,7 +61,7 @@ The [current folder](https://github.com/macca448/Blynk2MESH/tree/main/current) c
   3.  Mouse Trap State
   4.  Open / Close main garage Door
 
-![Garage PIN Map](https://github.com/macca448/Blynk2MESH/blob/main/assets/garage_pin_map.jpg)
+![Garage PIN Map](https://github.com/macca448/Blynk2MESH/blob/main/assets/node2_garage_schematic.jpg)
 
 ![Mouse_Trap Circuit](https://github.com/macca448/Blynk2MESH/blob/main/assets/mouse_trap_schematic.jpg)
 
