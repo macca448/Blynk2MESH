@@ -3,9 +3,10 @@
 //Working Prototype on an ATTiny85
 //Set bootloader clock to "internal 8Mhz"
 //Tested with the Simple ATTiny25/45/85 controller library
+//Circuit Schematic https://raw.githubusercontent.com/macca448/Blynk2MESH/main/assets/mouse_trap_schematic.jpg
 
-//8bit Servo library for ATTiny85
-#include "Servo8Bit.h"                //https://github.com/fri000/Servo8Bit
+//8bit Servo library for ATTiny85         >> https://github.com/fri000/Servo8Bit
+#include "Servo8Bit.h"                
 
 //Input/Output pin constants
 
@@ -98,4 +99,3 @@ void loop (){
             }                           //Todo: Design a trap with multi chambers to catch more than one mouse.
     }
 }
-    
